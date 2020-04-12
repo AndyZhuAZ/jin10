@@ -2,6 +2,7 @@
 <html lang="zh-cn-Hans">
 <head>
     <meta charset="UTF-8">
+    <script src="js/jquery.min.js"></script>
     <link href="css/index.css" rel="stylesheet">
     <title>交易曦游记</title>
 </head>
@@ -42,7 +43,7 @@
                 </div>
                 <div class="video-box">
                     <div class="video-top">
-                        <span>TED-911Mothers</span>
+                        <span id="video-title">TED-911Mothers</span>
                     </div>
                     <div class="video-bottom">
                         <div class="video-share">
@@ -53,79 +54,156 @@
                             <img src="img/QQ.png"/>
                             <img src="img/空间.png"/>
                         </div>
-                        <video controls="controls"
+                        <video id="video-window" controls="controls"
                                src="http://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-light.mp4"
                                poster="https://pi.tedcdn.com/r/pl.tedcdn.com/social/ted-logo.png"></video>
                     </div>
                 </div>
-
             </div>
             <div class="right-content">
                 <div class="right-box">
                     <div class="right-box-content">
                         <div class="right-title">交易员人物介绍</div>
-                        <div class="introduction">
-                            <img src="img/头像 男孩.png">
-                            <div class="intro-text">
-                                林则徐（1785年），福建
-                                <br>
-                                清朝时期的政治家、思想家和诗人，因其主张严禁鸦片，在中国有"民族英雄"之誉。
+                        <div class="inner-box">
+                            <div class="introduction">
+                                <img src="img/头像 男孩.png">
+                                <div class="intro-text">
+                                    林则徐（1785年），福建
+                                    <br>
+                                    清朝时期的政治家、思想家和诗人，因其主张严禁鸦片，在中国有"民族英雄"之誉。
+                                </div>
+                            </div>
+                            <div class="topic">
+                                <div class="topic-top right-title">本集话题讨论</div>
+                                <div class="topic-title">交易简单看来，不外乎上涨下跌，赌博不外乎输赢，交易员是赌徒吗？</div>
+                                <ul class="topic-vote">
+                                    <li>
+                                        <div class="vote-box">
+                                            <div class="vote vote1">
+                                                <span>投票</span>
+                                            </div>
+                                            <div class="vote-text">
+                                                <div class="vote-flag">
+                                                    我是选项1
+                                                </div>
+                                                <div class="vote-count">
+                                                    已投
+                                                    <span>1209</span>
+                                                    票
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="vote-box">
+                                            <div class="vote vote2">
+                                                <span>投票</span>
+                                            </div>
+                                            <div class="vote-text">
+                                                <div class="vote-flag">
+
+                                                </div>
+                                                <div class="vote-count">
+                                                    已投
+                                                    <span>1209</span>
+                                                    票
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <img src="img/Bitmap.png" class="bitmap"/>
+                            <div class="recruit-box">
+                                <div class="recruit-title">
+                                    线下沙龙招募活动
+                                </div>
+                                <div class="recruit-content">
+                                    交易简单看来，不外乎上涨下跌，赌博不外乎输赢，交易员是赌徒吗？交易简单看来，不外乎上涨下跌，赌博不外乎输赢，交易员是赌徒吗？
+                                </div>
+                                <div class="recruit-detail">
+                                    活动详情
+                                </div>
+                            </div>
+                            <div class="QR-box">
+                                <div class="QR-title">
+                                    <span>加入我们《交易曦游记》大家庭把！</span>
+                                </div>
+                                <div class="QR-code">
+                                    <img src="img/二维码.png" height="84" width="84"/>
+                                </div>
+                                <div class="QR-content">
+                                    <span>交易曦游记</span>
+                                    <br>
+                                    <span>微信号：jin10_domi</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="topic">
-                            <div class="topic-top right-title">本集话题讨论</div>
-                            <div class="topic-title">交易简单看来，不外乎上涨下跌，赌博不外乎输赢，交易员是赌徒吗？</div>
-                            <ul class="topic-vote">
-                                <li>
-                                    <div class="vote-box">
-                                        <div class="vote vote1">
-                                            <span>投票</span>
-                                        </div>
-                                        <div class="vote-text">
-                                            <div class="vote-flag">
-                                                我是选项1
-                                            </div>
-                                            <div class="vote-count">
-                                                已投
-                                                <span>1209</span>
-                                                票
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="vote-box">
-                                        <div class="vote vote2">
-                                            <span>投票</span>
-                                        </div>
-                                        <div class="vote-text">
-                                            <div class="vote-flag">
-
-                                            </div>
-                                            <div class="vote-count">
-                                                已投
-                                                <span>1209</span>
-                                                票
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <img src="img/Bitmap.png" class="bitmap"/></div>
                     </div>
                 </div>
             </div>
             <div class="video-tab">
                 <div class="video-tab-title">
-                    <img src="img/小标题装饰火箭.png">
-                    <div class="vt">最新视频</div>
-                    <img src="img/小标题右边.png">
+                    <img src="img/小标题装饰火箭.png" class="v-rocket">
+                    <div class="vt">往期回顾</div>
+                    <img src="img/小标题右边.png" class="v-arrow">
+                    <div class="more-btn">
+                        <span>查看更多</span>
+                    </div>
                 </div>
-                <div class="video-history"></div>
+                <div class="video-history">
+                    <ul class="history-box">
+                        <li><div id="video1" class="history-video">
+                            <div class="history-title">
+                                <span>TED-AJJacobs-2007P</span>
+                                <br>
+                                <span style="font-size: 10px">2020-1-1</span>
+                            </div>
+                        </div></li>
+                        <li><div id="video2" class="history-video">
+                            <div class="history-title">
+                                <span>TED-AJJacobs-2011P</span>
+                                <br>
+                                <span style="font-size: 10px">2020-1-1</span>
+                            </div>
+                        </div></li>
+                        <li><div id="video3" class="history-video">
+                            <div class="history-title">
+                                <span>TED-AaronOConnell-2011</span>
+                                <br>
+                                <span style="font-size: 10px">2020-1-1</span>
+                            </div>
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="comment-box">
+
             </div>
         </div>
 
     </div>
 </div>
+<script>
+    var video = document.getElementById('video-window')
+    var video_title = document.getElementById('video-title')
+    $(document).ready(function () {
+        $('#video1').click(function () {
+            video_title.innerText = 'TED-AJJacobs-2007P'
+            video.src = 'http://mirror.aarnet.edu.au/pub/TED-talks/AJJacobs_2007P-light.mp4';
+            video.play();
+        });
+        $('#video2').click(function () {
+            video_title.innerText = 'TED-AJJacobs-2011P'
+            video.src = 'http://mirror.aarnet.edu.au/pub/TED-talks/AJJacobs_2011P-light.mp4';
+            video.play();
+        });
+        $('#video3').click(function () {
+            video_title.innerText = 'TED-AaronOConnell-2011'
+            video.src = 'http://mirror.aarnet.edu.au/pub/TED-talks/AaronOConnell_2011-light.mp4';
+            video.play();
+        });
+    })
+</script>
 </body>
 </html>
