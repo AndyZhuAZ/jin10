@@ -178,10 +178,16 @@
                 </div>
             </div>
             <div class="comment-box">
+                <div class="com-title">
+                    <img src="img/小标题装饰火箭.png" class="v-rocket">
+                    <div class="vt">留言区</div>
+                    <img src="img/小标题右边.png" class="v-arrow">
+                </div>
+                <div class="comment">
 
+                </div>
             </div>
         </div>
-
     </div>
 </div>
 <script>
@@ -203,6 +209,12 @@
             video.src = 'http://mirror.aarnet.edu.au/pub/TED-talks/AaronOConnell_2011-light.mp4';
             video.play();
         });
+        $(window).scroll(function () {
+            console.log(window.screenTop)
+            if(window.screenTop > 30){
+                console.log('scroll')
+            }
+        })
     })
 </script>
 </body>
