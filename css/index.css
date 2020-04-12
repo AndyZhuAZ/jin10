@@ -347,7 +347,7 @@ img {
 }
 .topic-vote li{
     margin: 20px 20px 0;
-    border: 2px solid #b4a0a0;
+    border: 2px solid rgb(181,163,163);
     border-radius: 6px;
     padding: 6px 6px 24px;
     position: relative;
@@ -357,6 +357,49 @@ img {
 }
 .vote-box{
     position: relative;
+}
+.vote{
+    color: white;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 64px;
+    padding: 0 2px;
+    display: table;
+}
+.vote span{
+    vertical-align: middle;
+    display: table-cell;
+}
+.vote1{
+    background: url("../img/左边.png");
+    background-size: 100% auto;
+}
+.vote2{
+    background: url("../img/右边.png");
+    background-size: 100% auto;
+}
+.vote-text{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+}
+.vote-flag{
+    height: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: -4px auto;
+}
+.vote-count{
+    height: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: -4px auto;
+}
+.bitmap{
+    width: 90%;
+    margin: 15% 5%;
 }
 
 .video-tab{
