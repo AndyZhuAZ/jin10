@@ -184,7 +184,50 @@
                     <img src="img/小标题右边.png" class="v-arrow">
                 </div>
                 <div class="comment">
-
+                    <div class="comment-topic comment-inner">
+                        <div class="comment-topic-icon">
+                            <img src="img/留言.png"/>
+                        </div>
+                        <div class="comment-topic-text">
+                            <span>交易简单看来，不外乎上涨下跌，赌博不外乎输赢，交易员是赌徒吗？</span>
+                        </div>
+                    </div>
+                    <div class="comment-inner">
+                        <div class="ring"></div>
+                        <div class="ring right"></div>
+                        <div class="comment-bottom">
+                            <div class="comment-login-container">
+                                <img src="img/留言.png">
+                                <span>评论需要登陆，您还没有登陆</span>
+                            </div>
+                            <div class="comment-show">
+                                <div class="comment-title">
+                                    最新评论（
+                                    <span>149</span>
+                                    ）
+                                </div>
+                                <ul class="comment-list">
+                                    <li>
+                                        <div class="comment-left">
+                                            <img src="img/头像 女孩.png"/>
+                                        </div>
+                                        <div class="comment-right">
+                                            <div class="comment-user">
+                                                扭转乾坤
+                                            </div>
+                                            <div class="comment-loc-time">
+                                                <span>温州</span>
+                                                <span>10:06</span>
+                                            </div>
+                                            <div class="comment-text">
+                                                <span>大部分赌徒都是久赌必输</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -210,9 +253,17 @@
             video.play();
         });
         $(window).scroll(function () {
-            console.log(window.screenTop)
-            if(window.screenTop > 30){
-                console.log('scroll')
+            // console.log($(window).scrollTop())
+            if ($(window).scrollTop() > 880){
+                $('.right-content').css('position','fixed')
+                $('.right-content').css('top','0')
+                $('.right-content').css('right','18%')
+                // $('.right-content').style.position = 'fixed'
+            }
+            if ($(window).scrollTop() < 880){
+                $('.right-content').css('position','absolute')
+                $('.right-content').css('right','0')
+                $('.right-content').css('right','0')
             }
         })
     })
