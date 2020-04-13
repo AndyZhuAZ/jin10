@@ -650,6 +650,7 @@ img {
 .comment-left img{
     width: 56px;
     height: 56px;
+    cursor: pointer;
 }
 .comment-right{
     margin-left: 100px;
@@ -672,6 +673,9 @@ img {
 .comment-text{
     margin: 40px auto;
     float: bottom;
+}
+#com1, #com2{
+
 }
 /*Responsive layout*/
 @media screen and (max-width: 768px) {

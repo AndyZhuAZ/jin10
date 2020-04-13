@@ -211,7 +211,8 @@
                                 <ul class="comment-list">
                                     <li>
                                         <div class="comment-left">
-                                            <img src="img/点赞.png">
+                                            <img id="like1" src="img/点赞.png">
+                                            <span id="com1">0</span>
                                         </div>
                                         <div class="comment-right">
                                             <img class="comment-user-icon" src="img/头像 女孩.png"/>
@@ -229,7 +230,8 @@
                                     </li>
                                     <li>
                                         <div class="comment-left">
-                                            <img src="img/点赞.png">
+                                            <img id="like2" src="img/点赞.png">
+                                            <span id="com2">0</span>
                                         </div>
                                         <div class="comment-right">
                                             <img class="comment-user-icon" src="img/头像 男孩.png"/>
@@ -259,6 +261,14 @@
     var video = document.getElementById('video-window')
     var video_title = document.getElementById('video-title')
     $(document).ready(function () {
+        $('#like1').click(function () {
+            let com1 = document.getElementById('com1')
+            com1.innerText = (Number(com1.innerText) + 1).toString()
+        })
+        $('#like2').click(function () {
+            let com2 = document.getElementById('com2')
+            com2.innerText = (Number(com2.innerText) + 1).toString()
+        })
         $('#video1').click(function () {
             video_title.innerText = 'TED-AJJacobs-2007P'
             video.src = 'http://mirror.aarnet.edu.au/pub/TED-talks/AJJacobs_2007P-light.mp4';
@@ -275,7 +285,7 @@
             video.play();
         });
         $(window).scroll(function () {
-            console.log($(window).width())
+            // console.log($(window).width())
             // console.log($(window).scrollTop())
             if($(window).width() > 768){
                 if ($(window).scrollTop() > 880){
