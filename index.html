@@ -197,21 +197,24 @@
                         <div class="ring right"></div>
                         <div class="comment-bottom">
                             <div class="comment-login-container">
-                                <img src="img/留言.png">
-                                <span>评论需要登陆，您还没有登陆</span>
+                                <div class="comment-login-container-msg">
+                                    <img src="img/留言.png">
+                                    <span>评论需要登陆，您还没有登陆</span>
+                                </div>
                             </div>
                             <div class="comment-show">
                                 <div class="comment-title">
-                                    最新评论（
+                                    —————————————————— 最新评论（
                                     <span>149</span>
-                                    ）
+                                    ）——————————————————
                                 </div>
                                 <ul class="comment-list">
                                     <li>
                                         <div class="comment-left">
-                                            <img src="img/头像 女孩.png"/>
+                                            <img src="img/点赞.png">
                                         </div>
                                         <div class="comment-right">
+                                            <img class="comment-user-icon" src="img/头像 女孩.png"/>
                                             <div class="comment-user">
                                                 扭转乾坤
                                             </div>
@@ -224,6 +227,25 @@
                                             </div>
                                         </div>
                                     </li>
+                                    <li>
+                                        <div class="comment-left">
+                                            <img src="img/点赞.png">
+                                        </div>
+                                        <div class="comment-right">
+                                            <img class="comment-user-icon" src="img/头像 男孩.png"/>
+                                            <div class="comment-user">
+                                                扭转乾坤
+                                            </div>
+                                            <div class="comment-loc-time">
+                                                <span>广州</span>
+                                                <span>09:34</span>
+                                            </div>
+                                            <div class="comment-text">
+                                                <span>交易员是猎人，捕捉市场动态</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -253,17 +275,19 @@
             video.play();
         });
         $(window).scroll(function () {
+            console.log($(window).width())
             // console.log($(window).scrollTop())
-            if ($(window).scrollTop() > 880){
-                $('.right-content').css('position','fixed')
-                $('.right-content').css('top','0')
-                $('.right-content').css('right','18%')
-                // $('.right-content').style.position = 'fixed'
-            }
-            if ($(window).scrollTop() < 880){
-                $('.right-content').css('position','absolute')
-                $('.right-content').css('right','0')
-                $('.right-content').css('right','0')
+            if($(window).width() > 768){
+                if ($(window).scrollTop() > 880){
+                    $('.right-content').css('position','fixed')
+                    $('.right-content').css('top','0')
+                    $('.right-content').css('right','18%')
+                    // $('.right-content').style.position = 'fixed'
+                }
+                if ($(window).scrollTop() < 880){
+                    $('.right-content').css('position','absolute')
+                    $('.right-content').css('right','0')
+                }
             }
         })
     })
