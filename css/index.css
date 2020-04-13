@@ -648,8 +648,8 @@ img {
     width: 75px;
 }
 .comment-left img{
-    width: 56px;
-    height: 56px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
 }
 .comment-right{
@@ -749,5 +749,19 @@ img {
     }
     #video3{
         display: none;
+    }
+    .comment-box{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .comment-title{
+        display: none;
+    }
+    .comment-left img{
+        width: 20px;
+        height: 20px;
+    }
+    .comment-right{
+        margin-left: 50px;
     }
 }
